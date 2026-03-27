@@ -7,7 +7,34 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Smart Task Management System</h1>
+  <header>
+    <h1>Smart Task Management System</h1>
+    <p>Create and manage your tasks easily.</p>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Add Task</h2>
+
+      <form id="task-form">
+        <label for="title">Task Title</label>
+        <input type="text" id="title" required>
+
+        <label for="assignedTo">Assign To</label>
+        <input type="text" id="assignedTo" required>
+
+        <label for="dueDate">Due Date</label>
+        <input type="date" id="dueDate" required>
+
+        <button type="submit">Add Task</button>
+      </form>
+    </section>
+
+    <section class="tasks-section">
+      <h2>Tasks</h2>
+      <div id="task-list"></div>
+    </section>
+  </main>
 
   <script src="app.js"></script>
 </body>
