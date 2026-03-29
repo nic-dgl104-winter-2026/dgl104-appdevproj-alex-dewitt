@@ -39,8 +39,34 @@ taskForm.addEventListener("submit", function (event) {
   );
 
   tasks.push(task);
+  renderTasks();
 
   console.log(tasks);
 
   taskForm.reset();
+  
 });
+
+const taskList = document.getElementById("task-list");
+
+/*
+purpose: display tasks on the page
+parameters: none
+returns: none
+*/
+function renderTasks() {
+  taskList.innerHTML = "";
+
+  for (const task of tasks) {
+    const taskCard = document.createElement("div");
+    taskCard.className = "task-card";
+
+    taskCard.innerHTML = `
+      <h3>${task.title}</h3>
+      <p><strong>Assigned To:</strong> ${task.assignedTo}</p>
+      <p><strong>Due Date:</strong> ${task.dueDate}</p>
+    `;
+
+    taskList.appendChild(taskCard);
+  }
+}

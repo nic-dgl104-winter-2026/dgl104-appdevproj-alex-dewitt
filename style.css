@@ -58,3 +58,16 @@ button {
 button:hover {
   background-color: #163854;
 }
+
+.task-card {
+  border: 1px solid #ddd;
+  border-left: 6px solid #1f4e79;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #fafafa;
+}
+
+.task-card h3 {
+  margin-top: 0;
+}
