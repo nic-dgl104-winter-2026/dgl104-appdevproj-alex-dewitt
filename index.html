@@ -26,8 +26,31 @@
         <label for="dueDate">Due Date</label>
         <input type="date" id="dueDate" required>
 
+        <label for="priority">Priority</label>
+        <select id="priority">
+          <option value="">Auto Suggest</option>
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+
+        <label for="status">Status</label>
+        <select id="status">
+          <option value="To Do">To Do</option>
+          <option value="In Progress">In Progress</option>
+          <option value="Completed">Completed</option>
+        </select>
+
         <button type="submit">Add Task</button>
       </form>
+    </section>
+
+    <section class="dashboard-section">
+      <h2>Dashboard</h2>
+      <p>Total Tasks: <span id="total">0</span></p>
+      <p>To Do: <span id="todo">0</span></p>
+      <p>In Progress: <span id="progress">0</span></p>
+      <p>Completed: <span id="completed">0</span></p>
     </section>
 
     <section class="tasks-section">
@@ -35,19 +58,6 @@
       <div id="task-list"></div>
     </section>
   </main>
-  <label for="priority">Priority</label>
-<select id="priority">
-  <option value="Low">Low</option>
-  <option value="Medium">Medium</option>
-  <option value="High">High</option>
-</select>
-
-<label for="status">Status</label>
-<select id="status">
-  <option value="To Do">To Do</option>
-  <option value="In Progress">In Progress</option>
-  <option value="Completed">Completed</option>
-</select>
 
   <script src="app.js"></script>
 </body>

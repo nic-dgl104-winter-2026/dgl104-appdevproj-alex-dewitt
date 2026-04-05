@@ -1,7 +1,7 @@
 /*
 Author: Alex d.
-Purpose: Base styles for task management system
-Date last modified: 2026-03-26
+Purpose: styles for smart task management system
+Date last modified: 2026-04-04
 */
 
 * {
@@ -42,6 +42,7 @@ form {
 }
 
 input,
+select,
 button {
   padding: 0.75rem;
   font-size: 1rem;
@@ -52,7 +53,6 @@ button {
   color: white;
   border: none;
   border-radius: 6px;
-  cursor: pointer;
 }
 
 button:hover {
@@ -70,4 +70,21 @@ button:hover {
 
 .task-card h3 {
   margin-top: 0;
+}
+
+.task-card p {
+  margin: 0.4rem 0;
+}
+
+.task-buttons {
+  margin-top: 1rem;
+}
+
+.task-buttons button {
+  margin-right: 0.5rem;
+}
+
+.task-card:hover {
+  transform: scale(1.01);
+  transition: 0.2s;
 }
